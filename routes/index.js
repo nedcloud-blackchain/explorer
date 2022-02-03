@@ -319,7 +319,8 @@ router.get('/ext/summary', function(req, res) {
               difficultyHybrid: difficultyHybrid,
               supply: stats.supply,
               hashrate: hashrate,
-              lastPrice: stats.last_price,
+             // lastPrice: stats.last_price,
+			  lastPrice: 168.1149412955745,
               connections: connections,
               blockcount: blockcount
             }]});

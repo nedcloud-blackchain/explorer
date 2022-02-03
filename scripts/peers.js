@@ -36,12 +36,12 @@ mongoose.connect(dbString, function(err) {
         var address = body[i].addr.substring(0,portSplit);
         db.find_peer(address, function(peer) {
           if (peer) {
-            if (isNaN(peer['port']) || peer['port'].length < 2 || peer['country'].length < 1 || peer['country_code'].length < 1) {
+            /* if (isNaN(peer['port']) || peer['port'].length < 2 || peer['country'].length < 1 || peer['country_code'].length < 1) {
               db.drop_peers(function() {
                 console.log('Saved peers missing ports or country, dropping peers. Re-reun this script afterwards.');
                 exit();
               });
-            }
+            } */
             // peer already exists
             loop.next();
           } else {

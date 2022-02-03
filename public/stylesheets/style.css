@@ -210,3 +210,7 @@ tr {
 	font-size: 0.7em;
 }
 
+.bg-primary {
+  background-color: #55644b !important;
+  border-color: #000000 !important;
+}
